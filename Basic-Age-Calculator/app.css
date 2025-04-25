@@ -21,7 +21,7 @@ body{
 
 .container{
     width: 100%;
-    height: 700px;
+    height: auto;
     border: 5px solid var(--purple-blush);
     max-width: 450px;
     margin: 50px auto;
@@ -31,6 +31,12 @@ body{
     align-items: center;
     gap: 20px;
     
+}
+
+.container .home-page{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
 }
 
 .container .home-page .logo-img{
@@ -77,7 +83,7 @@ body{
 }
 
 .container .calculator-wrapper{
-    background-color: var(--pink-blush);
+    background-color: var(--blue-blush);
     width: 100%;
     height: 100%;
     border-top-right-radius: 35px;
