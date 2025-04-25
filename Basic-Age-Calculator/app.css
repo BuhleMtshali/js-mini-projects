@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Special+Gothic+Condensed+One&display=swap');
+
 :root{
     --body-bg: #0D1015;
     --purple-blush: #B7B1F2;
@@ -6,8 +9,14 @@
     --blue-blush: #D9EAFD;
 }
 
+*{
+    margin: 0;
+}
+
 body{
     background-color: var(--body-bg);
+    font-family: "Inter Tight", sans-serif;
+    text-align: center;
 }
 
 .container{
@@ -18,11 +27,15 @@ body{
     margin: 50px auto;
     border-radius: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
 }
 
 .container .home-page .logo-img{
-    width: 150px;
-    height: 150px;
+    width: 320px;
+    height: 320px;
 }
 
 .container .home-page .logo-img img{
@@ -30,4 +43,11 @@ body{
     height: 100%;
     object-fit: contain;
     object-position: center;
+}
+
+.container .home-page .text-wrapper h2{
+    font-size: 3.5rem;
+    color: var(--pink-blush);
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 30px;
 }
