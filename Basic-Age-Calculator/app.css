@@ -23,7 +23,7 @@ body{
     width: 100%;
     height: auto;
     border: 5px solid var(--purple-blush);
-    max-width: 450px;
+    max-width: 600px;
     margin: 50px auto;
     border-radius: 50px;
     display: flex;
@@ -131,9 +131,45 @@ body{
     color: var(--blue-blush);
     font-weight: 600;
     font-size: 1.2rem;
+    margin: 15px 0;
 }
 
 .calculator-wrapper form button{
     width: 80%;
-    
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.calculator-wrapper form button:nth-of-type(1){
+    background-color: var(--purple-blush);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.calculator-wrapper form button:nth-of-type(2){
+    background-color: white;
+    color: var(--purple-blush);
+    border: 2px solid var(--purple-blush);
+    font-weight: 600;
+}
+
+.calculator-wrapper form button:nth-of-type(1):hover{
+    background-color: white;
+    border: 3px solid var(--purple-blush);
+    color: var(--purple-blush);
+}
+
+.calculator-wrapper form button:nth-of-type(2):hover{
+    background-color: var(--purple-blush);
+    color: white;
+    border: 2px solid var(--purple-blush);
+}
+
+input[type='date']{
+    accent-color: var(--purple-blush);
 }
