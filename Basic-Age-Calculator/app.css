@@ -19,3 +19,15 @@ body{
     border-radius: 50px;
     display: flex;
 }
+
+.container .home-page .logo-img{
+    width: 150px;
+    height: 150px;
+}
+
+.container .home-page .logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
