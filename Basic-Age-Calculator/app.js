@@ -9,4 +9,18 @@ toggleBtn.addEventListener('click', () => {
     } else {
         toggleBtn.textContent = 'Close Calculator';
     }
+});
+
+//getting the date
+const userDOB = document.querySelector('#user-dob');
+const currentDate = document.querySelector('#current-dob');
+const submitForm = document.querySelector('#submit-form');
+const resetForm = document.querySelector('#reset-form');
+
+submitForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const dateString = userDOB.value;
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    console.log(year)
 })
