@@ -19,11 +19,16 @@
             <button id="toggle-calculator">Calculate Age</button>
             </div>
         </div>
-        <div class="calculator-wrapper">
-            <h1>calculator</h1>
-            <h1>calculator</h1>
-            <h1>calculator</h1>
-            <h1>calculator</h1>
+        <div class="calculator-wrapper hidden">
+            <h1>Enter Your Details below</h1>
+            <form>
+                <label for="user-dob">Date of Birth</label>
+                <input type="date" name="user-dob" id="user-dob">
+                <label for="current-dob">Today's Date</label>
+                <input type="date" name="current-dob" id="current-dob">
+                <button type="submit">Get Age</button>
+                <button type="submit">Reset</button>
+            </form>
         </div>
     </div>
 <script src="app.js"></script>
