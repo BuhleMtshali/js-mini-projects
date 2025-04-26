@@ -15,8 +15,8 @@ toggleBtn.addEventListener('click', () => {
 const userDOB = document.querySelector('#user-dob');
 const currentDate = document.querySelector('#current-dob');
 const submitForm = document.querySelector('#submit-form');
-const resetForm = document.querySelector('#reset-form');
-
+const reset = document.querySelector('#submit-btn');
+const userAge = document.querySelector('#age');
 submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const currentDay = new Date(currentDate.value);
@@ -27,5 +27,9 @@ submitForm.addEventListener('submit', (e) => {
         age --;
     }
     console.log(age)
+    userAge.textContent = age;
+    if(age){
+        reset.textContent = 'Reset Age'
+    }
     
 })
