@@ -24,17 +24,18 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: auto;
     height: auto;
     border: 5px solid var(--purple-blush);
-    max-width: 600px;
+    max-width: 700px;
     margin: 50px auto;
     border-radius: 50px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    
+    padding: 20px;
 }
 
 .container .home-page{
