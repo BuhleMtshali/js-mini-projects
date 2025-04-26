@@ -19,8 +19,13 @@ const resetForm = document.querySelector('#reset-form');
 
 submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const dateString = userDOB.value;
-    const date = new Date(dateString);
-    const year = date.getFullYear();
-    console.log(year)
+    const currentDay = new Date(currentDate.value);
+    const userBirthDay = new Date(userDOB.value);
+    let age = currentDay.getFullYear() - userBirthDay.getFullYear();
+    const monthDiff = currentDay.getMonth() - currentDay.getMonth();
+    if(monthDiff < 0 || (monthDiff === 0 && currentDay.getDate() < userBirthDay.getDate())){
+        age --;
+    }
+    console.log(age)
+    
 })
