@@ -1,3 +1,4 @@
+const listWrapper = document.querySelector('.list-wrapper')
 const data = [
     {
         id: 1,
@@ -31,10 +32,25 @@ const data = [
     },
 ]
 
-for(let i = 0; i <= data.length; i++){
-    renderData(i)
-}
+// for(let i = 0; i <= data.length; i++){
+//     renderData(i)
+// }
 
-function renderData(i){
-    console.log(i)
-}
+// function renderData(i){
+//     console.log(i)
+// }
+let html = '';
+data.forEach((item) => {
+    console.log(item.age)
+   
+    html += `
+            <div class="item">
+            <p>${item.name}</p>
+            <p>${item.age}</p>
+            <p>${item.profession}</p>
+            </div>
+            `;
+
+})
+
+listWrapper.innerHTML = html;
