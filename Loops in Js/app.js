@@ -31,4 +31,10 @@ const data = [
     },
 ]
 
-console.log(data)
+for(let i = 0; i <= data.length; i++){
+    renderData(i)
+}
+
+function renderData(i){
+    console.log(i)
+}
