@@ -75,3 +75,31 @@ input:focus{
     outline: 3px solid var(--pink);
     border: none;
 }
+
+.movie-wrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie{
+    border: 2px solid var(--pink);
+    width: 100%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movie-name{
+    font-size: 1.1rem;
+    color: var(--dark-pink);
+}
+
+.movie span{
+    color: var(--purple);
+    cursor: pointer;
+}
