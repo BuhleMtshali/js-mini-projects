@@ -11,6 +11,11 @@
         text-align: center;
         
     }
+
+    body{
+        background-color: black;
+        color: white;
+    }
     form{
         display: flex;
         flex-direction: column;
@@ -22,6 +27,9 @@
     input{
         padding: 15px 20px;
         width: 100%;
+        background-color: black;
+        border: 3px solid white;
+        color: white;
     }
     button{
         width: 120px;
@@ -36,7 +44,9 @@
     <input type="text" name="lastName" id="lastName" placeholder="Enter your last Name">
     <input type="number" id="number" placeholder="Enter your Contact Number">
     <button type="submit">Submit</button>
+    <small>Open the console to see the results...</small>
     </form>
+   
 <script src="app.js"></script>
 </body>
 </html>

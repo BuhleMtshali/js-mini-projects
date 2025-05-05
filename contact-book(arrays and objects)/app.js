@@ -19,8 +19,6 @@ function addContact(e){
     contactBook.push(contact);
     console.log(contactBook);
 
-    name = '';
-    lastName = '';
-    number = '';
+    document.querySelector("#form").reset();
 }
 
