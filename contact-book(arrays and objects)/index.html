@@ -36,6 +36,19 @@
         margin: auto;
         cursor: pointer;
     }
+
+    .contact-wrapper{
+        display: flex;
+        justify-content: space-around;
+        max-width: 500px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .contacts-wrapper .contact{
+        border: 3px solid white;
+        width: 100%;
+    }
 </style>
 <body>
     <h1>Arrays and Objects</h1>
@@ -46,7 +59,8 @@
     <button type="submit">Submit</button>
     <small>Open the console to see the results...</small>
     </form>
-   
+   <div class="contacts-wrapper">
+   </div>
 <script src="app.js"></script>
 </body>
 </html>

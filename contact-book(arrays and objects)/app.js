@@ -1,5 +1,6 @@
 let contactBook = [];
-
+let html = ''
+let wrapper = document.querySelector('.contacts-wrapper');
 document.querySelector("#form").addEventListener("submit", addContact)
 
 
@@ -18,7 +19,15 @@ function addContact(e){
 
     contactBook.push(contact);
     console.log(contactBook);
-
+    contactBook.forEach((item) => {
+        html += `<div class="contact">
+                 <p>${item.contactName}</p>
+                <p>${item.contactLastName}</p>
+                <p>${item.contactNumber}</p>
+                </div>
+          `
+          wrapper.innerHTML = html;
+    })
     document.querySelector("#form").reset();
 }
 
