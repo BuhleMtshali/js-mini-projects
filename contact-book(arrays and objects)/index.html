@@ -8,11 +8,35 @@
 <style>
     *{
         font-family: cursive;
+        text-align: center;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+      margin: auto;
+        max-width: 500px;
+        width: 100%;
+        gap: 10px;
+    }
+    input{
+        padding: 15px 20px;
+        width: 100%;
+    }
+    button{
+        width: 120px;
+        margin: auto;
+        cursor: pointer;
     }
 </style>
 <body>
     <h1>Arrays and Objects</h1>
+    <form id="form">
     <input type="text" name="name" id="name" placeholder="Enter your name">
+    <input type="text" name="lastName" id="lastName" placeholder="Enter your last Name">
+    <input type="number" id="number" placeholder="Enter your Contact Number">
+    <button type="submit">Submit</button>
+    </form>
 <script src="app.js"></script>
 </body>
 </html>
