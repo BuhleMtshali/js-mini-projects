@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-color: #222223;
+    --lavener: #BCB4FF;
+    --white: #FFFEEC;
+}
+
+*{
+    font-family: "Inter Tight", sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.heading-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.heading-wrapper img{
+    width: 80px;
+    height: 80px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+}
