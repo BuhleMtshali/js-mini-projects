@@ -4,6 +4,7 @@
     --bg-color: #222223;
     --lavener: #BCB4FF;
     --white: #FFFEEC;
+    --green: #CAC426;
 }
 
 *{
@@ -68,4 +69,8 @@ body{
     border: 3px solid var(--lavener);
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.food{
+    background-color: var(--green);
 }
