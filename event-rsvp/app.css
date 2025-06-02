@@ -9,6 +9,10 @@
     font-family: "Inter Tight", sans-serif;
 }
 
+*:focus{
+    outline: none;
+}
+
 .container{
    text-align: center;
     background-color: #b7b1f2;
@@ -33,4 +37,19 @@ label{
 input{
     padding: 15px;
     width: 100%;
+   border: 5px solid #FDB7EA;
+   font-size: 1rem;
+   font-weight: 700;
+   background-color: #b7b1f2;
+   color: white;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    background-color: #fbf3b9;
+    border: none;
+    color: #FDB7EA;
+    font-weight: 700;
+    cursor: pointer;
 }
