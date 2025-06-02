@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
+:rooot{
+    --bg-color: #FDB7EA;
+    --purple: #b7b1f2;
+    --yellow: #fbf3b9;
+}
 *{
     font-family: "Inter Tight", sans-serif;
 }
@@ -8,4 +13,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--purple);
 }
